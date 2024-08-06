@@ -1,0 +1,2 @@
+# core
+DotNet_core
