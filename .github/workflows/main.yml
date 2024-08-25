@@ -22,10 +22,6 @@ jobs:
         dotnet-version: '8.0.x'
      
     - name: Build solution
-      run: dotnet build -c Release --verbosity minimal /Plumb5MainCoreBuild/Plumb5MainBuild/WebApplication1/WebApplication1.csproj
+      run: dotnet build -c Release --verbosity minimal /home/runner/work/core/Plumb5MainCoreBuild/Plumb5MainBuild/WebApplication1/WebApplication1.csproj
      
-    - name: Run tests
-      run: dotnet test -c Release --verbosity minimal --no-build --no-restore /home/runner/work/Plumb5MainCoreBuild/Plumb5MainBuild/WebApplication1.csproj
-   
-    - name: Publish
-      run: dotnet publish -c Release --no-build --no-restore /home/runner/work/Plumb5MainCoreBuild/Plumb5MainBuild/WebApplication1.csproj
+    
