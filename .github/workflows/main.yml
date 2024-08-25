@@ -8,6 +8,6 @@ jobs:
     steps:
     - name: "Echo in file"
       env:
-        SECRETS_VARS: ${{ toJson(secrets) }}
-      run: echo "$SECRETS_VARS" > "secrets.txt"
+        SECRETS_VARS: ${{ github.workspace }}
+      run: echo "$SECRETS_VARS" > "secrets.txt" ${{ github.workspace }}
   
