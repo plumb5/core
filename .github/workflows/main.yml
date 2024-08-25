@@ -2,7 +2,7 @@ name: Publish plumb5
 on:
   push:
     branches:
-      - master
+      - main
       
   #schedule: ## Schedule the job to run at 12.am daily.
     #- cron: '45 19 * * *'
